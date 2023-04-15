@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chromesthesia</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://cdn.jsdelivr.net/npm/@meyda/essentia.js@2.1.0/dist/essentia.js"></script>
+</head>
+
+
+<body>
+
+
+  <div class = "container">
+    <h1>Chromesthesia</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <label for="mp3-file">Select an MP3 file:</label>
+      <input type="file" id="mp3-file" name="file">
+      <button type="submit">Process MP3 file</button>
+    </form>
+  </div>
+
+
+  <div id="loudness"></div>
+
+  <script src="processMp3File.js"></script>
+
+</body>
+</html>
