@@ -1,0 +1,9 @@
+body * {
+  font-weight: normal;
+}
+
+body *::before {
+  content: attr(data-text);
+  display: inline-block;
+  font-weight: bold;
+}

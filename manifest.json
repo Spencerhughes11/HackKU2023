@@ -1,0 +1,29 @@
+{
+    "name": "Bionic Reading Extension",
+    "description": "Bold the first half of every word to make reading easier",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      
+      "default_icon": "images/icon.png"
+    },
+    
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "fontSettings"
+      ],
+
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+B",
+          "mac": "Command+B"
+        }
+      }
+    }
+  
+}
